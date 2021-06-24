@@ -1,0 +1,32 @@
+/* 
+  flex弹性布局：
+  flex容器：
+    flex-direction:
+    flex-wrap:
+    flex-flow: flex-direction flex-wrap
+    justify-content:
+    align-item: 单个容器项在交叉轴的排列方式
+    align-content: 容器内的内容的排列方式
+
+  flex容器项
+    flex-grow: 0(默认不放大）| 1
+    flex-shrink: 1（默认缩小）| 0
+    flex-basis: 
+    flex: flex-grow flex-shrink flex-basic
+    order: 排列顺序
+    align-self: 单独的排列方式
+*/
+main {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+main div {
+  height: 50px;
+  border: 1px solid #000;
+  margin-top: 2px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
